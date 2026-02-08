@@ -32,3 +32,16 @@ Temporary Items
 
 # customize Headers whiteout touch git submodule.
 layouts/partials/extra-head.html
+
+# Hugo build output
+public/
+
+# Hugo cache
+resources/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node modules (npm)
+node_modules/
