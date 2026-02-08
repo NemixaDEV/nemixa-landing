@@ -123,6 +123,7 @@ img {
   &.right {
     margin-left: auto;
   }
+
   &.circle {
     border-radius: 50%;
     max-width: 25%;
@@ -142,6 +143,7 @@ figure {
   &.left-floated {
     margin-right: auto;
     float: left;
+
     img {
       margin: 20px 20px 20px 0;
     }
@@ -159,6 +161,7 @@ figure {
   &.right-floated {
     margin-left: auto;
     float: right;
+
     img {
       margin: 20px 0 20px 20px;
     }
@@ -189,7 +192,9 @@ figure {
   }
 }
 
-em, i, strong {
+em,
+i,
+strong {
   // Default
   color: $light-color-variant;
 
@@ -210,7 +215,7 @@ em, i, strong {
   }
 }
 
-> code {
+>code {
   font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
   font-display: auto;
   font-feature-settings: normal;
@@ -257,7 +262,7 @@ pre {
     word-wrap: break-word;
   }
 
-  > .code {
+  >.code {
     background: none !important;
     margin: 0;
     padding: 0;
@@ -268,15 +273,15 @@ pre {
     @media (prefers-color-scheme: dark) {
       color: inherit;
     }
-  
+
     @media (prefers-color-scheme: light) {
       color: #ccc;
     }
-  
+
     [data-theme=dark] & {
       color: inherit;
     }
-  
+
     [data-theme=light] & {
       color: #ccc;
     }
@@ -447,7 +452,7 @@ hr {
   margin: 10px auto;
 }
 
-// Changes
+// Changes /////////////////////////////
 .home-subtitle {
   font-size: 1.5rem;
   font-weight: 600;
@@ -456,9 +461,12 @@ hr {
 }
 
 @keyframes heartbeat {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.03);
   }
@@ -466,4 +474,32 @@ hr {
 
 .menu-trigger {
   display: none !important;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+  &.left {
+    margin-right: auto;
+  }
+
+  &.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.right {
+    margin-left: auto;
+  }
+
+  &.circle {
+    border-radius: 50%;
+    max-width: 25%;
+    margin: auto;
+  }
 }
